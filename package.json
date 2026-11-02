@@ -1,0 +1,14 @@
+{
+  "name": "jobtrack-fullstack",
+  "version": "2.0.0",
+  "description": "JobTrack – Online Job Application Tracker (React + Node.js + Express + SQLite)",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "test:backend": "cd backend && npm test",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["jobtrack", "react", "express", "sqlite", "job-tracker"],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,143 @@
+/* JobTrack Master CSS Bundle */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Import original page stylesheets */
+@import './css/style.css';
+@import './css/add-application.css';
+@import './css/my-application.css';
+@import './css/interviews.css';
+@import './css/statistics.css';
+@import './css/profile.css';
+@import './css/admin.css';
+
+:root {
+  --primary: #2563EB;
+  --secondary: #7C3AED;
+  --success: #22C55E;
+  --danger: #EF4444;
+  --background: #F8FAFC;
+  --text: #1E293B;
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Enhancements for Admin User Management & Actions */
+.admin-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.admin-badge.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.admin-badge.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-btn-action {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 6px;
+}
+
+.admin-btn-view {
+  background: #eff6ff;
+  color: #2563eb;
+}
+.admin-btn-view:hover {
+  background: #dbeafe;
+}
+
+.admin-btn-toggle {
+  background: #fef3c7;
+  color: #92400e;
+}
+.admin-btn-toggle:hover {
+  background: #fde68a;
+}
+
+.admin-btn-delete {
+  background: #fee2e2;
+  color: #ef4444;
+}
+.admin-btn-delete:hover {
+  background: #fecaca;
+}
+
+/* React modal backdrop overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.admin-pill-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #7c3aed;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 16px;
+  color: #64748b;
+}
+
+.admin-filter-bar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
